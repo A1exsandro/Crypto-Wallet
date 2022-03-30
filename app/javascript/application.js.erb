@@ -1,0 +1,7 @@
+// Entry point for the build script in your package.json
+import "@hotwired/turbo-rails"
+import "./controllers"
+import * as bootstrap from "bootstrap"
+
+<% msg = Time.now.hour < 12 ? “Bom dia!” : “Olá!!!” %>
+alert(“<%= msg %>”);
